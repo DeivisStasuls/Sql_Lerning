@@ -25,3 +25,12 @@ FROM
         JOIN
     order_statuses
     on orders.status = prder_statuses.order_status;
+-- 6.uzd
+SELECT 
+    o.order_id,
+    c.customer_id,
+    c.first_name,
+    c.last_name
+FROM customers c
+JOIN orders o
+ON o.customer_id = c.customer_id;
