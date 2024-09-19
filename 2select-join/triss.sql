@@ -6,7 +6,6 @@ SELECT
     e.last_name AS 'Last name',
     e.reports_to AS 'Reports to',
     e.first_name AS 'Manager'
-FROM
-    employees e
-        JOIN
-    employees m ON e.reports_to = m.employee_id
+FROM employees e
+JOIN employees m 
+ON e.reports_to = m.employee_id;
